@@ -4,7 +4,8 @@
   "description": "Multiple timers in single instance to measure repetitive events performance",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify -s avTimer ./index.js > ./dist/avtimer.js && uglifyjs dist/avtimer.js > dist/avtimer.min.js"
   },
   "keywords": [
     "timer",
